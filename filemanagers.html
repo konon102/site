@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Файловые менеджеры</title>
+  <style>
+    body {
+      background-color: #e6f0fa;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #ffffff;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-flex;
+      gap: 30px;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: bold;
+      padding: 8px 12px;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      color: #004080;
+    }
+
+    nav li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      min-width: 180px;
+      z-index: 100;
+    }
+
+    nav li:hover ul {
+      display: block;
+    }
+
+    nav li ul li {
+      display: block;
+    }
+
+    nav li ul a {
+      padding: 10px 15px;
+      color: #0066cc;
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    nav li ul a:hover {
+      background-color: #f0f8ff;
+      color: #003366;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    .manager {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .manager h2 {
+      margin-top: 0;
+    }
+
+    .manager button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .manager button:hover {
+      background-color: #004080;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">О проекте</a></li>
+      <li><a href="about.html">Об авторе</a></li>
+      <li>
+        <a href="firewalls.html">Сетевые экраны</a>
+        <ul>
+          <li><a href="peerblock.html">PeerBlock</a></li>
+          <li><a href="safing.html">Safing.io</a></li>
+          <li><a href="glasswire.html">GlassWire</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="filemanagers.html">Файловые менеджеры</a>
+        <ul>
+          <li><a href="freecommander.html">FreeCommander</a></li>
+          <li><a href="mucommander.html">muCommander</a></li>
+          <li><a href="double.html">Double Commander</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <h1>Файловые менеджеры</h1>
+  <div class="container">
+    <p>
+      Файловые менеджеры позволяют пользователю удобно управлять файлами и папками на компьютере.
+      Они предоставляют графический или текстовый интерфейс для выполнения операций над файлами, 
+      таких как копирование, перемещение, переименование, удаление и доступ к различным носителям.
+    </p>
+
+    <div class="manager">
+      <h2>FreeCommander</h2>
+      <p>
+        Мощный и бесплатный двухпанельный файловый менеджер для Windows. Поддерживает работу с архивами, вкладки, FTP-доступ, синхронизацию папок и удобный просмотр файлов.
+      </p>
+      <button onclick="location.href='freecommander.html'">Подробнее</button>
+    </div>
+
+    <div class="manager">
+      <h2>muCommander</h2>
+      <p>
+        Лёгкий и кроссплатформенный двухпанельный файловый менеджер, написанный на Java. 
+        Поддерживает работу с архивами, FTP, SFTP, SMB, облачными хранилищами и отличается простым и удобным интерфейсом.
+      </p>
+      <button onclick="location.href='mucommander.html'">Подробнее</button>
+    </div>
+
+    <div class="manager">
+      <h2>Double Commander</h2>
+      <p>
+        Кроссплатформенный файловый менеджер с двумя панелями, вдохновлённый Total Commander.
+        Имеет встроенный архиватор, редактор текста, FTP-клиент и поддержку плагинов.
+      </p>
+      <button onclick="location.href='double.html'">Подробнее</button>
+    </div>
+  </div>
+</body>
+</html>

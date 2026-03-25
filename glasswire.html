@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>GlassWire</title>
+  <style>
+    body {
+      background-color: #e6f0fa;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #ffffff;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-flex;
+      gap: 30px;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: bold;
+      padding: 8px 12px;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      color: #004080;
+    }
+
+    nav li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      min-width: 180px;
+      z-index: 100;
+    }
+
+    nav li:hover ul {
+      display: block;
+    }
+
+    nav li ul li {
+      display: block;
+    }
+
+    nav li ul a {
+      padding: 10px 15px;
+      color: #0066cc;
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    nav li ul a:hover {
+      background-color: #f0f8ff;
+      color: #003366;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+
+    .section {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .section h2 {
+      color: #0066cc;
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .nav-buttons {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .nav-buttons button {
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 20px;
+      margin: 0 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .nav-buttons button:hover {
+      background-color: #004080;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">О проекте</a></li>
+      <li><a href="about.html">Об авторе</a></li>
+      <li>
+        <a href="firewalls.html">Сетевые экраны</a>
+        <ul>
+          <li><a href="peerblock.html">PeerBlock</a></li>
+          <li><a href="safing.html">Safing.io</a></li>
+          <li><a href="glasswire.html">GlassWire</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="filemanagers.html">Файловые менеджеры</a>
+        <ul>
+          <li><a href="freecommander.html">FreeCommander</a></li>
+          <li><a href="mucommander.html">muCommander</a></li>
+          <li><a href="double.html">Double Commander</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <h1>GlassWire</h1>
+  <div class="container">
+
+    <div class="nav-buttons">
+      <button onclick="location.href='firewalls.html'">Cетевые экраны</button>
+      <button onclick="location.href='peerblock.html'">PeerBlock</button>
+      <button onclick="location.href='safing.html'">Safing.io</button>
+    </div>
+
+    <div class="section">
+      <p>
+        <strong>GlassWire</strong> — это мощный сетевой экран и инструмент для мониторинга интернет-соединений. Он предоставляет визуальную информацию о текущей активности в сети, позволяет отслеживать потенциально опасные соединения и управлять доступом к интернет-ресурсам.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Преимущества</h2>
+      <ul>
+        <li><strong>Интуитивно понятный интерфейс:</strong> Удобный и красивый интерфейс, подходящий для пользователей с разным уровнем знаний.</li>
+        <li><strong>Подробный мониторинг сети:</strong> Отображает все сетевые соединения в реальном времени, показывая информацию о возможных угрозах.</li>
+        <li><strong>Безопасность и конфиденциальность:</strong> Предоставляет функции защиты от нежелательных программ и контролирует доступ к сети.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Недостатки</h2>
+      <ul>
+        <li><strong>Платность:</strong> Основные функции доступны только в платной версии программы.</li>
+        <li><strong>Зависимость от Windows:</strong> Программа в основном ориентирована на операционную систему Windows, что ограничивает её совместимость с другими платформами.</li>
+        <li><strong>Ресурсоёмкость:</strong> Может потреблять значительные ресурсы системы, особенно при длительном использовании на слабых устройствах.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>1. Раздел "Graphic - net"</h2>
+      <div style="text-align:center; margin-top:15px;">
+        <img src="glas3.png" alt="Graphic - net" style="max-width:100%; border-radius:8px;">
+      </div>
+      <p>
+        Этот раздел отображает информацию о первых сетевых подключениях различных приложений и сервисов, а также их активность.
+      </p>
+      <h3>Important</h3>
+      <p>
+        Категория: <strong>Trading</strong><br>
+        Мониторинг сетевой активности, связанной с торговыми операциями или обменом данными.
+      </p>
+      <ul>
+        <li><strong>Open GC auto-updater:</strong> Подключение к <em>datainfosoftxt.opera.com</em>.</li>
+        <li><strong>Microsoft ChatDriverFile Co-Authoring Executable:</strong> Подключение к <em>eventdesignfound22.entrunda.shoutinga.samz.com</em>.</li>
+        <li><strong>SmartScreen Защитника Windows:</strong> Подключение к <em>open-alge-use-10.windowsgp.shoutinga.samz.com</em>.</li>
+        <li><strong>Guardatel Comfort:</strong> Подключение к локальному IP <em>192.168.2.555</em> (некорректный IP).</li>
+      </ul>
+      <p><strong>First network activity:</strong> 11.00 am, 11.11 am</p>
+      <p><em>Accru Bau us Windows. Mobile eenerappeans.Windows.neipoldurre o passon 'Просветка'.</em></p>
+      <p>Поиск: поле ввода с упоминанием <strong>Premium Resource</strong></p>
+      <p><strong>Для чего нужен раздел?</strong></p>
+      <ul>
+        <li>Мониторинг первых сетевых подключений приложений.</li>
+        <li>Выявление подозрительных или нежелательных соединений.</li>
+        <li>Контроль времени и частоты сетевой активности.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>2. Раздел "Graphics - DEE"</h2>
+      <div style="text-align:center; margin-top:15px;">
+        <img src="glas4.png" alt="Graphics - DEE" style="max-width:100%; border-radius:8px;">
+      </div>
+      <p>
+        Этот раздел предоставляет детализированные результаты контроля сетевых устройств и их активности.
+      </p>
+      <h3>Results: Pico del Family Controller</h3>
+      <ul>
+        <li><strong>Action A253:</strong> IP 192.168.0.1, описание: PCF17-XE03-4303, время активности: 29 May, 2021, 11:02 AM.</li>
+        <li><strong>Generic устройства:</strong><br>
+          – IP 192.168.0.236, описание A2.E5/A4.27.22.56.<br>
+          – IP 192.168.0.99, описание XE17-SE21-A4.09.
+        </li>
+        <li><strong>Desktop:</strong> MSL M6-YG2, Windows, IP 192.168.0.203, MAC 00:06:14 SEAA600.</li>
+      </ul>
+      <p><em>Accrualizing Windows. Include arrangements.Windows. перейдите в раздел 'Параметры'.</em></p>
+      <p><strong>Для чего нужен раздел?</strong></p>
+      <ul>
+        <li>Контроль подключённых устройств в локальной сети.</li>
+        <li>Отслеживание активности и технических параметров устройств.</li>
+        <li>Выявление несанкционированных устройств.</li>
+      </ul>
+      <p><strong>Общие функции Wireglass</strong></p>
+      <ul>
+        <li>Мониторинг сетевых подключений.</li>
+        <li>Анализ первых соединений приложений.</li>
+        <li>Выявление подозрительных доменов или IP-адресов.</li>
+        <li>Управление устройствами в сети.</li>
+        <li>Интеграция с настройками Windows.</li>
+        <li>Доступ к премиум-функциям (например, расширенному поиску).</li>
+      </ul>
+      <p><strong>Что произойдёт, если...</strong></p>
+      <ul>
+        <li><em>Заблокировать подозрительное подключение:</em> предотвращение утечки данных.</li>
+        <li><em>Проверить устройство с некорректным IP:</em> возможна ошибка.</li>
+        <li><em>Перейти в "Параметры" Windows:</em> откроются системные настройки сети.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>3. Раздел "Интерфейс Time"</h2>
+      <img src="glas1sr.png" alt="Секция приложений и хостов" style="max-width:100%; border-radius:8px; margin-bottom:10px;">
+      <p>
+        Этот раздел представляет собой интегрированную панель мониторинга сетевой активности, объединяя в одном интерфейсе данные по приложениям, хостам, типам трафика и геолокации. Подобные интерфейсы встречаются в GlassWire, Wireshark или в корпоративных решениях для анализа сети.
+      </p>
+
+      <h3>Секция "App" — Список приложений</h3>
+      <p>
+        Включает процессы, взаимодействующие с сетью:
+      </p>
+      <ul>
+        <li><strong>Браузеры и офисные приложения:</strong> Open 5G Internet Browser, Microsoft PowerPoint, Edge Workmodel.</li>
+        <li><strong>Системные службы:</strong> Engine Service, SmartScreen Sharement Windows.</li>
+        <li><strong>Подозрительные процессы:</strong> "Python" device software office, Quantum Control Center.</li>
+        <li><strong>Сервисы Microsoft:</strong> Ontofrontfolio Co-Authors, Visual, File Options.</li>
+      </ul>
+      <p>
+        Назначение — выявление потенциально опасных или несанкционированных подключений.
+      </p>
+
+      <h3>Секция "Hosts" — Подключённые домены и IP-адреса</h3>
+      <p>
+        Отмечены активные и неактивные подключения:
+      </p>
+      <ul>
+        <li><strong>Легитимные:</strong> docker.mp.apple.com, host5.encounterfile.mpeg.apple.com.</li>
+        <li><strong>Подозрительные:</strong> host5.hardwidgets.org, xlib2.digital.diamaster.</li>
+        <li><strong>Множественные домены:</strong> open1.1.caffeib.org ... open7.1.caffeib.org.</li>
+      </ul>
+      <p>
+        Рекомендуется блокировать сомнительные хосты и проверять их через Virustotal.
+      </p>
+
+      <h3>Секция "Traffic Type" — Типы трафика</h3>
+      <ul>
+        <li><strong>Стандартные:</strong> HTTPS, DNS, uDNS.</li>
+        <li><strong>Специфические:</strong> SBSTP, MTV, SSRP Dediate Gateway.</li>
+        <li><strong>Подозрительные:</strong> Wi-Fi-Virus Interface, JetBBS2 Token Service.</li>
+      </ul>
+      <p>
+        Анализ протоколов помогает обнаружить аномалии и угрозы.
+      </p>
+
+      <h3>Секция "Countries" — Геолокация трафика</h3>
+      <ul>
+        <li><strong>Основные страны:</strong> США, Германия, Япония, Китай.</li>
+        <li><strong>Несоответствия:</strong> пары типа Portugal:Japan, India:Italy.</li>
+      </ul>
+      <p>
+        Геоанализ позволяет обнаружить неожиданные или поддельные подключения.
+      </p>
+
+      <h3>Дополнительные элементы</h3>
+      <ul>
+        <li><strong>Worldwide website:</strong> monoc_executive — возможно, сервер управления.</li>
+      </ul>
+
+      <h3>Рекомендации</h3>
+      <ul>
+        <li>Блокировать подозрительные приложения и хосты.</li>
+        <li>Анализировать нестандартные протоколы и геоадресацию.</li>
+        <li>Следить за "фальшивыми" названиями и аномалиями.</li>
+      </ul>
+
+      <div style="text-align:center; margin-top:15px;">
+        <img src="glas1lev.png" alt="Типы трафика и геолокация" style="max-width:100%; border-radius:8px;">
+      </div>
+    </div>
+    <div class="section">
+      <h2>4. Раздел "Интерфейс Classories"</h2>
+      <img src="glas2on.png" alt="Интерфейс Classories – таблица приложений" style="max-width:100%; border-radius:8px; margin-bottom:10px;">
+      <p>
+        Данный раздел представляет собой панель Firewall, предназначенную для контроля сетевой активности приложений. Это может быть интерфейс GlassWire или аналогичного средства мониторинга.
+      </p>
+
+      <h3>Элементы управления Firewall</h3>
+      <ul>
+        <li><strong>Firewall Profile:</strong> выбор профиля ("Public", "Private", "Custom").</li>
+        <li><strong>Firewall Mode:</strong> режим работы ("Strict", "Balanced", "Off").</li>
+        <li><strong>Search:</strong> поиск процессов.</li>
+        <li><strong>Create New Profile:</strong> создание правил и фильтров.</li>
+        <li><strong>Click to Block:</strong> моментальная блокировка приложений.</li>
+      </ul>
+      <p>
+        Используется для настройки безопасности и фильтрации подозрительного трафика.
+      </p>
+
+      <h3>Таблица активных приложений</h3>
+      <p>
+        В таблице отображаются параметры процессов:
+      </p>
+      <table style="width:100%; border-collapse:collapse; margin-bottom:10px;">
+        <tr><th>Параметр</th><th>Описание</th><th>Пример</th></tr>
+        <tr><td>Active Apps</td><td>Имя процесса</td><td>Open 0.5 Internet Browser</td></tr>
+        <tr><td>Version</td><td>Версия приложения</td><td>116.6.564.133</td></tr>
+        <tr><td>Opt Score</td><td>Оценка доверия</td><td>8.4:11.2</td></tr>
+        <tr><td>Traffic In/Out</td><td>Трафик (вход/выход)</td><td>0.0 / 256.8%</td></tr>
+        <tr><td>Notes</td><td>Доп. информация</td><td>106.9.68.8</td></tr>
+        <tr><td>Voutil Red</td><td>Нагрузка или системный параметр</td><td>(32,000)</td></tr>
+        <tr><td>+</td><td>Действия</td><td>/</td></tr>
+      </table>
+      <p>
+        Представлены как системные, так и подозрительные процессы: <em>renderer-in-the-art</em>, <em>Start-on-sales</em> и др.
+      </p>
+
+      <h3>Подозрительные записи</h3>
+      <ul>
+        <li><strong>Некорректные версии:</strong> например, 116.6.564.133.</li>
+        <li><strong>Странные имена:</strong> renderer-in-the-art.</li>
+        <li><strong>Повторяющиеся IP-адреса:</strong> 106.9.68.8 у разных приложений.</li>
+      </ul>
+      <p>
+        Следует проверять такие записи на вредоносную активность и при необходимости блокировать.
+      </p>
+
+      <h3>Premium-функции</h3>
+      <p>
+        Внизу раздела указано: <em>Upgrade to unlock Premium features. [Please you password our name.]</em><br>
+        Это может быть частью тестового интерфейса или напоминанием о подписке.
+      </p>
+
+      <h3>Ключевые возможности</h3>
+      <ul>
+        <li>Реальный мониторинг трафика и подключений.</li>
+        <li>Блокировка и фильтрация трафика в 1 клик.</li>
+        <li>Анализ угроз по Opt Score, IP, подозрительным признакам.</li>
+        <li>Создание пользовательских профилей для разных сетей.</li>
+      </ul>
+
+      <div style="text-align:center; margin-top:15px;">
+        <img src="glas2off.png" alt="Firewall и управление профилями" style="max-width:100%; border-radius:8px;">
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

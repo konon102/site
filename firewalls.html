@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Сетевые экраны и антишпионские программы</title>
+  <style>
+    body {
+      background-color: #e6f0fa;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #ffffff;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-flex;
+      gap: 30px;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: bold;
+      padding: 8px 12px;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      color: #004080;
+    }
+
+    nav li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      min-width: 180px;
+      z-index: 100;
+    }
+
+    nav li:hover ul {
+      display: block;
+    }
+
+    nav li ul li {
+      display: block;
+    }
+
+    nav li ul a {
+      padding: 10px 15px;
+      color: #0066cc;
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    nav li ul a:hover {
+      background-color: #f0f8ff;
+      color: #003366;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 20px auto;
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+
+    .software-block {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .software-block h2 {
+      margin-top: 0;
+      color: #0066cc;
+    }
+
+    .software-block a.button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #0066cc;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .software-block a.button:hover {
+      background-color: #004080;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">О проекте</a></li>
+      <li><a href="about.html">Об авторе</a></li>
+      <li>
+        <a href="firewalls.html">Сетевые экраны</a>
+        <ul>
+          <li><a href="peerblock.html">PeerBlock</a></li>
+          <li><a href="safing.html">Safing.io</a></li>
+          <li><a href="glasswire.html">GlassWire</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="filemanagers.html">Файловые менеджеры</a>
+        <ul>
+          <li><a href="freecommander.html">FreeCommander</a></li>
+          <li><a href="mucommander.html">muCommander</a></li>
+          <li><a href="double.html">Double Commander</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <h1>Антишпионские программы и сетевые мониторы</h1>
+
+  <div class="content">
+    <p>
+      Антишпионские программы и утилиты мониторинга соединений помогают защитить конфиденциальность пользователей, блокируя нежелательные соединения и отслеживая сетевую активность в реальном времени.
+    </p>
+
+    <div class="software-block">
+      <h2>PeerBlock</h2>
+      <p>PeerBlock — это инструмент, позволяющий блокировать IP-адреса, которые могут представлять угрозу. Он основан на фильтрации IP-списков, тем самым ограничивая доступ к потенциально опасным соединениям.</p>
+      <a class="button" href="peerblock.html">Подробнее</a>
+    </div>
+
+    <div class="software-block">
+      <h2>Safing.io (Portmaster)</h2>
+      <p>Safing Portmaster — современное решение для защиты конфиденциальности, которое отслеживает и фильтрует весь исходящий и входящий сетевой трафик. Имеет встроенную поддержку DNS-over-TLS и блокировку трекеров.</p>
+      <a class="button" href="safing.html">Подробнее</a>
+    </div>
+
+    <div class="software-block">
+      <h2>GlassWire</h2>
+      <p>GlassWire — это визуальный брандмауэр и сетевой монитор, предоставляющий пользователю удобный интерфейс для отслеживания активности приложений в сети и контроля за их соединениями.</p>
+      <a class="button" href="glasswire.html">Подробнее</a>
+    </div>
+  </div>
+</body>
+</html>

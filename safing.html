@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Safing.io</title>
+  <style>
+    body {
+      background-color: #e6f0fa;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #ffffff;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-flex;
+      gap: 30px;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: bold;
+      padding: 8px 12px;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      color: #004080;
+    }
+
+    nav li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      min-width: 180px;
+      z-index: 100;
+    }
+
+    nav li:hover ul {
+      display: block;
+    }
+
+    nav li ul li {
+      display: block;
+    }
+
+    nav li ul a {
+      padding: 10px 15px;
+      color: #0066cc;
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    nav li ul a:hover {
+      background-color: #f0f8ff;
+      color: #003366;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+
+    .section {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .section h2 {
+      color: #0066cc;
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .nav-buttons {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .nav-buttons button {
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 20px;
+      margin: 0 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .nav-buttons button:hover {
+      background-color: #004080;
+    }
+
+    /* Дополнительные стили для новых секций */
+    section {
+      background: white;
+      padding: 15px 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    section img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px 0 20px 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">О проекте</a></li>
+      <li><a href="about.html">Об авторе</a></li>
+      <li>
+        <a href="firewalls.html">Сетевые экраны</a>
+        <ul>
+          <li><a href="peerblock.html">PeerBlock</a></li>
+          <li><a href="safing.html">Safing.io</a></li>
+          <li><a href="glasswire.html">GlassWire</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="filemanagers.html">Файловые менеджеры</a>
+        <ul>
+          <li><a href="freecommander.html">FreeCommander</a></li>
+          <li><a href="mucommander.html">muCommander</a></li>
+          <li><a href="double.html">Double Commander</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <h1>Safing.io</h1>
+  <div class="container">
+
+    <div class="nav-buttons">
+      <button onclick="location.href='firewalls.html'">Cетевые экраны</button>
+      <button onclick="location.href='peerblock.html'">PeerBlock</button>
+      <button onclick="location.href='glasswire.html'">GlassWire</button>
+    </div>
+
+    <div class="section">
+      <p>
+        <strong>Safing.io</strong> — это комплексный инструмент для защиты конфиденциальности в интернете, который предоставляет несколько уровней безопасности, включая блокировку отслеживающих сервисов, управление сетевыми соединениями и анонимность для пользователя.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Преимущества</h2>
+      <ul>
+        <li><strong>Многоуровневая защита:</strong> Обеспечивает защиту от множества видов угроз и атак.</li>
+        <li><strong>Поддержка анонимности:</strong> Использует технологии для скрытия личных данных и местоположения.</li>
+        <li><strong>Интуитивный интерфейс:</strong> Удобный интерфейс, подходящий как для новичков, так и для опытных пользователей.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Недостатки</h2>
+      <ul>
+        <li><strong>Платность:</strong> В отличие от некоторых аналогичных решений, часть функционала доступна только в платной версии.</li>
+        <li><strong>Зависимость от сервера:</strong> Программа может зависеть от работы внешнего сервера для некоторых функций.</li>
+        <li><strong>Проблемы с совместимостью:</strong> Могут возникать проблемы с совместимостью на некоторых платформах и в специфических сетевых конфигурациях.</li>
+      </ul>
+    </div>
+
+    <section id="network-activity">
+      <h2>1. Раздел "Network Activity"</h2>
+      <img src="safcirc.png" alt="Network Activity Screenshot" />
+      <p>Этот раздел отображает текущую и историческую сетевую активность приложений.</p>
+
+      <h3>Компоненты:</h3>
+      <ul>
+        <li><strong>Заголовок "Network Activity"</strong> — указывает, что раздел посвящён мониторингу сетевых подключений.</li>
+        <li><strong>Примечание:</strong> "No network history data available" означает, что история не записывается или не включена.</li>
+        <li><strong>Поиск и фильтрация</strong> — пользователь может искать подключения по ключевым словам или фильтровать данные за последние 10 минут. Если включена история, можно анализировать более старые данные.</li>
+        <li><strong>Таблица "Search for connection types"</strong> содержит столбцы Aborted, Predicted, Quantity/Demand/Age, Notes/Change By/Staff. Таблица пуста, что может означать отсутствие активных подключений или ошибку загрузки.</li>
+        <li><strong>Список "CONNECTIONS"</strong> — перечислены типы подключений (например, HTTP, DNS).</li>
+        <li><strong>Результаты подключений (#17 Results)</strong> — список активных или недавних соединений, включая домены и приложения. Кнопка "Previous" возвращает к предыдущим результатам.</li>
+      </ul>
+
+      <h3>Для чего нужен раздел?</h3>
+      <ul>
+        <li>Контроль трафика: какие приложения куда подключаются.</li>
+        <li>Выявление подозрительных подключений (например, к рекламным доменам).</li>
+        <li>Настройка правил блокировки/разрешения.</li>
+      </ul>
+    </section>
+
+    <section id="resources">
+      <h2>2. Раздел "Resources" (safhelp.png)</h2>
+      <img src="safhelp.png" alt="Resources Screenshot" />
+      <p>Это справочный раздел с документацией и поддержкой.</p>
+
+      <h3>Компоненты:</h3>
+      <ul>
+        <li><strong>Ресурсы:</strong> Portmaster FAQ, Settings Handbook (открытый раздел отмечен галочкой), Safing Blog.</li>
+        <li><strong>Сообщества и поддержка:</strong> ссылки на Discord, Twitter, Mastodon и email-поддержку. Кнопки для связи с сообществом или разработчиками.</li>
+        <li><strong>Отчёты:</strong> Report a Bug, Suggest an Improvement, Compatibility Report для отправки обратной связи и сообщений о проблемах.</li>
+        <li><strong>Список сервисов:</strong> системные службы и приложения, которые Portmaster отслеживает.</li>
+      </ul>
+
+      <h3>Для чего нужен раздел?</h3>
+      <ul>
+        <li>Обучение: документация и гайды.</li>
+        <li>Поддержка: связь с разработчиками.</li>
+        <li>Улучшение продукта: отправка отзывов и багов.</li>
+      </ul>
+    </section>
+
+    <section id="all-apps">
+      <h2>3. Раздел "All Apps" (safquad.png)</h2>
+      <img src="safquad.png" alt="All Apps Screenshot" />
+      <p>Здесь отображаются все приложения, взаимодействующие с сетью, сгруппированные по категориям.</p>
+
+      <h3>Компоненты:</h3>
+      <ul>
+        <li><strong>Группы приложений:</strong> Browser, Background, Media, Network, Update, System, Other, Not assigned.</li>
+        <li><strong>Кнопка "Export Settings":</strong> экспорт текущих настроек безопасности в JSON.</li>
+        <li><strong>Приложения внутри групп:</strong> каждая программа с иконкой и названием.</li>
+      </ul>
+
+      <h3>Для чего нужен раздел?</h3>
+      <ul>
+        <li>Обзор всех программ с сетевым доступом.</li>
+        <li>Управление правилами безопасности для каждой программы.</li>
+        <li>Экспорт/импорт настроек для резервного копирования или переноса.</li>
+      </ul>
+    </section>
+<section>
+  <h2>4. Раздел "Dashboard"</h2>
+  <img src="safmain.png" alt="Dashboard Safing.io" class="screenshot" />
+  <p><strong>Это главная панель управления, которая предоставляет обзор текущего состояния защиты и сетевой активности.</strong></p>
+
+  <h3>Компоненты:</h3>
+  <ul>
+    <li><strong>Приветствие и статус</strong>: "Welcome back!" — приветствие пользователя.</li>
+    <li><strong>Уведомление о новых плагинах или обновлениях</strong>: "4 New CDs plugin's open dashboard".</li>
+    <li><strong>Блок "FULLNESS"</strong>: Перечислены модули и их статусы:
+      <ul>
+        <li>Secure DNS — защищённый DNS (активен, бесплатен).</li>
+        <li>Privacy Filter — фильтр приватности (активен, бесплатен).</li>
+        <li>Network History — история сетевой активности (доступна в платной версии Permanent Plus).</li>
+        <li>Safing Support и Safing Privacy Network — дополнительные функции (требуют подписки).</li>
+      </ul>
+    </li>
+    <li><strong>Новость о партнёрстве с VPN</strong>: "Safing Joint Forces with VPN".</li>
+    <li><strong>Блок "Dataflow"</strong>: Информация о сетевых обновлениях и списке служб и приложений.</li>
+    <li><strong>Статистика "RECENT ACTIVITY"</strong>: Таблицы с данными по подключениям, активным приложениям, объёмам данных и статистике.</li>
+    <li><strong>Блок "ACTING BLOCKED CONNECTIONS"</strong>: Таблица с заблокированными подключениями по странам (Россия, Италия, США и др.).</li>
+    <li><strong>Уведомление о текущем тарифе</strong>: "Your current plan is Permanent Free and cable stops!"</li>
+    <li><strong>Раздел "NEWS"</strong>: Повторение новости о сотрудничестве с VPN и ссылки на домены, связанные с рекламой или отслеживанием.</li>
+  </ul>
+
+  <p><strong>Для чего нужен раздел?</strong></p>
+  <ul>
+    <li>Обзор состояния защиты в реальном времени.</li>
+    <li>Контроль сетевой активности и заблокированных подключений.</li>
+    <li>Уведомления о новых функциях и обновлениях.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>5. Раздел "Secure" (Settings)</h2>
+  <img src="safstr2.png" alt="Secure Section 502" class="screenshot" />
+  <p><strong>Этот раздел посвящён настройкам безопасности и управления подключениями.</strong></p>
+
+  <h3>Компоненты:</h3>
+  <ul>
+    <li><strong>Уведомления</strong>: Например, "Which Name is in 4" — уведомление о нераспознанном процессе.</li>
+    <li><strong>Список процессов</strong>: "Windows License Manager", "Open OS Internet Browser", "Unreal Engine", "Microsoft® Windows® Operating...", "Microsoft OneDrive".</li>
+    <li><strong>Настройки браузера</strong>: "Open GX Internet Browser", пути к файлам и опции ("Block Connection", "Keep history on File", "User SPI on File").</li>
+    <li><strong>Кнопки</strong>: Block Connection, Settings, Details, Insights.</li>
+    <li><strong>Privacy Filter</strong>: Настройки фильтра приватности ("Internet Scope", "Connection Type", "Delete", "Print List").</li>
+    <li><strong>Default Network Action</strong>: Действия по умолчанию ("Force Block Internet Access", "Force Block LAN").</li>
+    <li><strong>Ошибка</strong>: "AccruBause Windows" — сообщение о проблеме с Windows.</li>
+  </ul>
+
+  <p><strong>Для чего нужен раздел?</strong></p>
+  <ul>
+    <li>Управление безопасностью отдельных приложений.</li>
+    <li>Настройка правил блокировки и фильтрации трафика.</li>
+    <li>Диагностика проблем с подключениями.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>6. Раздел "Secure" (Details)</h2>
+  <img src="safstr2.png" alt="Secure Section Details 503" class="screenshot" />
+  <p><strong>Детальная настройка профилей приложений и отладка.</strong></p>
+
+  <h3>Компоненты:</h3>
+  <ul>
+    <li><strong>Профиль браузера</strong>: "Open GX Internet Browser", путь к файлу "Chrome/Android/Android.com/Pageservice.json Kit/Space.exe".</li>
+    <li><strong>Опции</strong>: Block Connections, User SPK_etc.hm, SPR-DE_etc.hm.</li>
+    <li><strong>Свойства профиля</strong>: Описание применения профиля по процессам и путь "C:\Users\Home\AppData\Login/Pageservice.json Kit/Space.exe".</li>
+  </ul>
+
+  <p><strong>Для чего нужен раздел?</strong></p>
+  <ul>
+    <li>Тонкая настройка поведения приложений.</li>
+    <li>Контроль над действиями конкретных процессов.</li>
+    <li>Отладка и журналирование активности программ.</li>
+  </ul>
+</section>
+
+
+<section>
+  <h2>7. Раздел "Secure" (Connections)</h2>
+  <img src="safstr3.png" alt="Secure Section Details 503" class="screenshot" />
+  <h3>Общая информация о браузере</h3>
+    <p><strong>Print:</strong> Путь к исполняемому файлу (C:\Users\Jason\AppData\Local\Programs\Opera GX).</p>
+    <p><strong>Binary:</strong> Имя процесса (open.exe).</p>
+    <p><strong>Active Connections:</strong> Количество активных подключений (218).</p>
+    <p><strong>Network History:</strong> Отсутствует (None).</p>
+    <p><strong>Для чего нужно?</strong> Быстрый доступ к расположению браузера и мониторинг его сетевой активности.</p>
+    <h3>Блокировка подключений ("Block Connections")</h3>
+    <p><strong>Key History:</strong> Функция доступна в платной версии Get Plus (возможно, журналирование ключевых событий).</p>
+    <p><strong>Use SPN / SPN Exit:</strong> Требуют подписки Get Pro (SPN — Safing Privacy Network, защищённый VPN-выход).</p>
+    <p><strong>More:</strong> Дополнительные опции.</p>
+    <p><strong>Что будет при нажатии?</strong></p>
+    <ul>
+        <li>Платные функции перенаправят на страницу подписки.</li>
+        <li>"More" — раскроет расширенные настройки блокировки.</li>
+      </ul>
+
+      <h3>Управление подключениями ("Connections")</h3>
+      <p><strong>Кнопки:</strong></p>
+      <ul>
+        <li>Settings: Настройки фильтрации трафика.</li>
+        <li>Details: Техническая информация (IP, порт, протокол).</li>
+        <li>Insights: Аналитика трафика (геолокация, частота запросов).</li>
+        <li>Поиск: Поле для фильтрации подключений (нажать EXITER для применения).</li>
+      </ul>
+      <p><strong>Для чего нужно?</strong> Ручное управление каждым соединением (например, блокировка рекламных доменов).</p>
+
+      <h3>Фильтры ("Aboved")</h3>
+      <p><strong>Provider:</strong> Провайдер (например, Cloudflare).</p>
+      <p><strong>Country:</strong> Страна сервера.</p>
+      <p><strong>Domain:</strong> Домен подключения.</p>
+      <p><strong>More:</strong> Дополнительные критерии (например, тип трафика).</p>
+      <p><strong>Пример использования:</strong> Блокировка всех подключений к серверам в определённой стране.</p>
+
+      <h3>Группировка и сортировка ("Connection")</h3>
+      <p><strong>Group By:</strong> Группировка по доменам, странам и т.д.</p>
+      <p><strong>Sort:</strong> Сортировка по времени, количеству запросов.</p>
+      <p><strong>Для чего нужно?</strong> Удобный анализ трафика (например, выявление самых активных доменов).</p>
+
+      <h3>Автообновление ("Reload")</h3>
+      <p>Интервалы обновления данных: от Gx min_auto (настраиваемый интервал) до &lt; 1 min_auto (каждую минуту).</p>
+      <p><strong>Что делает?</strong> Позволяет настроить частоту обновления списка подключений.</p>
+
+      <h3>Таблица активных подключений ("AGA Results")</h3>
+      <p>Отображает детали последних соединений:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Колонка</th>
+            <th>Описание</th>
+            <th>Пример значения</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Domain/IP</td>
+            <td>Адрес сервера</td>
+            <td>features.opera-apt2.com (82.145.215.99:443)</td>
+          </tr>
+          <tr>
+            <td>Status</td>
+            <td>Статус (начато/завершено)</td>
+            <td>started / ended</td>
+          </tr>
+          <tr>
+            <td>Time</td>
+            <td>Время активности</td>
+            <td>1 min ago</td>
+          </tr>
+          <tr>
+            <td>Action</td>
+            <td>Правило (например, блокировка)</td>
+            <td>Default Network Action</td>
+          </tr>
+          <tr>
+            <td>Scope</td>
+            <td>Уровень применения</td>
+            <td>Global (для всех процессов)</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Примеры строк:</strong></p>
+      <ul>
+        <li>Подключения к traffink.syz (возможно, VPN-сервис) с повторяющимися запросами.</li>
+        <li>Домен opera-apt2.com — вероятно, серверы обновлений Opera GX.</li>
+      </ul>
+      <p><strong>Для чего нужно?</strong></p>
+      <ul>
+        <li>Выявление подозрительных подключений (например, неизвестные VPN).</li>
+        <li>Проверка, какие ресурсы потребляют трафик.</li>
+      </ul>
+
+      <h3>Ключевые функции раздела</h3>
+      <ul>
+        <li>Блокировка в один клик: Запрет подключений к выбранным доменам.</li>
+        <li>Глубокая аналитика: Просмотр геолокации серверов и типов трафика.</li>
+        <li>Гибкая настройка: Группировка, сортировка, интервалы обновления.</li>
+        <li>Интеграция с SPN: Использование Safing Privacy Network для анонимизации трафика (в Pro-версии).</li>
+      </ul>
+
+      <h3>Что произойдёт, если...</h3>
+      <ul>
+        <li><strong>Заблокировать домен (например, traffink.syz)?</strong> Браузер не сможет соединяться с этим сервером — это может нарушить работу некоторых функций (например, VPN).</li>
+        <li><strong>Включить "Use SPN"?</strong> Трафик Opera GX будет перенаправляться через защищённую сеть Safing (если есть подписка).</li>
+        <li><strong>Нажать "Details"?</strong> Откроется техническая информация: TLS-версия, сертификаты, продолжительность сеанса.</li>
+      </ul>
+</section>
+
+
+</body>
+</html>

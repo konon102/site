@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>PeerBlock</title>
+  <style>
+    body {
+      background-color: #e6f0fa;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #ffffff;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-flex;
+      gap: 30px;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: bold;
+      padding: 8px 12px;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      color: #004080;
+    }
+
+    nav li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      min-width: 180px;
+      z-index: 100;
+    }
+
+    nav li:hover ul {
+      display: block;
+    }
+
+    nav li ul li {
+      display: block;
+    }
+
+    nav li ul a {
+      padding: 10px 15px;
+      color: #0066cc;
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    nav li ul a:hover {
+      background-color: #f0f8ff;
+      color: #003366;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+
+    .section {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .section h2 {
+      color: #0066cc;
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .nav-buttons {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .nav-buttons button {
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 20px;
+      margin: 0 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .nav-buttons button:hover {
+      background-color: #004080;
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 15px 0;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">О проекте</a></li>
+      <li><a href="about.html">Об авторе</a></li>
+      <li>
+        <a href="firewalls.html">Сетевые экраны</a>
+        <ul>
+          <li><a href="peerblock.html">PeerBlock</a></li>
+          <li><a href="safing.html">Safing.io</a></li>
+          <li><a href="glasswire.html">GlassWire</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="filemanagers.html">Файловые менеджеры</a>
+        <ul>
+          <li><a href="freecommander.html">FreeCommander</a></li>
+          <li><a href="mucommander.html">muCommander</a></li>
+          <li><a href="double.html">Double Commander</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <h1>PeerBlock</h1>
+  <div class="container">
+
+    <div class="nav-buttons">
+      <button onclick="location.href='firewalls.html'">Cетевые экраны</button>
+      <button onclick="location.href='safing.html'">Safing.io</button>
+      <button onclick="location.href='glasswire.html'">GlassWire</button>
+    </div>
+
+    <div class="section">
+      <p>
+        <strong>PeerBlock</strong> — это бесплатное программное обеспечение, предназначенное для блокировки нежелательных IP-адресов. 
+        Оно позволяет контролировать и ограничивать доступ к вашему компьютеру с помощью фильтрации сетевых пакетов по спискам IP-адресов.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Преимущества</h2>
+      <ul>
+        <li><strong>Простота использования:</strong> Легко настроить и использовать даже для начинающих.</li>
+        <li><strong>Гибкость настройки:</strong> Позволяет импортировать пользовательские списки блокируемых адресов.</li>
+        <li><strong>Бесплатность:</strong> PeerBlock — это бесплатная программа с открытым исходным кодом.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Недостатки</h2>
+      <ul>
+        <li><strong>Не поддерживает IPv6:</strong> Программа не поддерживает фильтрацию по IPv6 адресам.</li>
+        <li><strong>Неэффективен против новых угроз:</strong> Программа не обновляется активно.</li>
+        <li><strong>Влияние на производительность:</strong> Может замедлять систему из-за фильтрации трафика.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+     <h1>Главный экран PeerBlock</h1>
+     <h2>На главном экране есть список заблокированных и разрешенных подключений. Здесь указаны:</h2>
+     <ul>
+       <li><strong>Время</strong> – когда подключение было обработано.</li>
+       <li><strong>Источник</strong> – кто или что пыталось подключиться (например, Xerox Corporation).</li>
+       <li><strong>IP-адреса</strong> – откуда и куда было подключение.</li>
+       <li><strong>Протокол</strong> – тип соединения (например, TCP).</li>
+       <li><strong>Действие</strong> – результат (Blocked, то есть заблокировано).</li>
+     </ul>
+     <div class="image-container">
+       <img src="mainscreenpb.png" alt="Главный экран PeerBlock">
+     </div>
+
+     <h2>Что можно сделать?</h2>
+     <h3>Enable</h3>
+     <p>Программа завершит работу.</p>
+     <div class="image-container">
+       <img src="pbun.png" alt="Unable">
+     </div>
+     <p><strong>Разрешить HTTP-подключения:</strong> программа разрешит подключения по HTTP, даже если они есть в списках блокировки.</p>
+     <div class="image-container">
+       <img src="httpallow.png" alt="HTTP is allowed">
+     </div>
+     <p><strong>Посмотреть историю подключений:</strong> откроется список всех подключений, которые происходили раньше.</p>
+     <div class="image-container">
+       <img src="pbhistview.png" alt="Connection's history">
+     </div>
+     <p><strong>Посмотреть историю блокировок:</strong> откроется список всех заблокированных подключений, которые были ранее.</p>
+     <div class="image-container">
+       <img src="pbblock.png" alt="Blocked">
+     </div>
+     <p><strong>Посмотреть историю разрешений:</strong> откроется список всех разрешенных подключений, которые были ранее.</p>
+     <div class="image-container">
+       <img src="pballow.png" alt="Allowed">
+     </div>
+     <p><strong>Очистить журнал блокировок:</strong> весь список заблокированных подключений очистится, но программа продолжит блокировать вредоносные IP.</p>
+     <div class="image-container">
+       <img src="pbclear.png" alt="Cleared">
+     </div>
+     <p><strong>Управлять списками блокировки:</strong> откроется окно, где можно добавить новые списки IP, изменить или удалить существующие.</p>
+     <div class="image-container">
+       <img src="pbhistedit.png" alt="Edit">
+     </div>
+        <h3>Открытие окна List Manager</h3>
+        <p>Нажмите кнопку <strong>List Manager</strong>, чтобы открыть окно управления списками.</p>
+        <h3>Настройки списков по умолчанию (Default Lists)</h3>
+        <ul>
+            <li><strong>P2P:</strong> блокирует организации, связанные с P2P-сетями.</li>
+            <li><strong>Spyware:</strong> блокирует сервера вредоносного и рекламного ПО.</li>
+            <li><strong>Advertising:</strong> блокирует рекламные и трекинговые серверы.</li>
+            <li><strong>Education:</strong> блокирует образовательные учреждения и университеты.</li>
+        </ul>
+     <div class="image-container">
+       <img src="pblm.png" alt="List Manager">
+     </div>
+        <p>Кнопка <button class="button">View</button> рядом с каждым пунктом позволяет просмотреть содержимое выбранного списка.</p>
+     <div class="image-container">
+       <img src="pblmview.png" alt="View">
+     </div>
+        <h3>Создание нового списка</h3>
+        <p>Нажмите кнопку <button class="button">Create List</button>, заполните поля (тип, описание) и выберите файл с IP-адресами.</p>
+     <div class="image-container">
+       <img src="pblmcl.png" alt="Create List">
+     </div>
+        <h3>Добавление существующего списка</h3>
+        <p>Нажмите кнопку <button class="button">Add</button>, добавьте файл списка или ссылку на список и укажите его тип и описание.</p>
+     <div class="image-container">
+       <img src="pblmadd.png" alt="Add">
+     </div>
+        <h3>Редактирование или удаление списка</h3>
+        <p>Выберите список и нажмите <button class="button">Edit</button>, чтобы изменить, или <button class="button">Remove</button>, чтобы удалить.</p>
+     <div class="image-container">
+       <img src="pblmedit.png" alt="Edit">
+     </div>
+     <h3>Обновить списки блокировки</h3>
+     <p>Программа проверит, актуальны ли ваши списки блокировки, и обновит их при необходимости.</p>
+     <div class="image-container">
+       <img src="pblmupd.png" alt="Check Updates">
+     </div>
+
+</body>
+</html>

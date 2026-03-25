@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>FreeCommander</title>
+  <style>
+    body {
+      background-color: #e6f0fa;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #ffffff;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-flex;
+      gap: 30px;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: bold;
+      padding: 8px 12px;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      color: #004080;
+    }
+
+    nav li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      min-width: 180px;
+      z-index: 100;
+    }
+
+    nav li:hover ul {
+      display: block;
+    }
+
+    nav li ul li {
+      display: block;
+    }
+
+    nav li ul a {
+      padding: 10px 15px;
+      color: #0066cc;
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    nav li ul a:hover {
+      background-color: #f0f8ff;
+      color: #003366;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+
+    .section {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .section h2 {
+      color: #0066cc;
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .nav-buttons {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .nav-buttons button {
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 20px;
+      margin: 0 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .nav-buttons button:hover {
+      background-color: #004080;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">О проекте</a></li>
+      <li><a href="about.html">Об авторе</a></li>
+      <li>
+        <a href="firewalls.html">Сетевые экраны</a>
+        <ul>
+          <li><a href="peerblock.html">PeerBlock</a></li>
+          <li><a href="safing.html">Safing.io</a></li>
+          <li><a href="glasswire.html">GlassWire</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="filemanagers.html">Файловые менеджеры</a>
+        <ul>
+          <li><a href="freecommander.html">FreeCommander</a></li>
+          <li><a href="mucommander.html">muCommander</a></li>
+          <li><a href="double.html">Double Commander</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <h1>FreeCommander</h1>
+  <div class="container">
+
+    <div class="nav-buttons">
+      <button onclick="location.href='filemanagers.html'">Файловые менеджеры</button>
+      <button onclick="location.href='mucommander.html'">muCommander</button>
+      <button onclick="location.href='double.html'">Double Commander</button>
+    </div>
+
+    <div class="section">
+      <p>
+        <strong>FreeCommander</strong> — это бесплатный файловый менеджер с двумя панелями для Windows, который предлагает богатый набор функций для управления файлами. 
+        Он удобен в использовании, поддерживает работу с архивами, вкладками, сетевыми ресурсами и имеет множество инструментов для повседневной работы с файловой системой.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Преимущества</h2>
+      <ul>
+        <li><strong>Простой и удобный интерфейс:</strong> Легко осваивается, подходит как новичкам, так и опытным пользователям.</li>
+        <li><strong>Поддержка архивов и FTP:</strong> Возможность работы с ZIP/7z/rar-архивами и подключение к FTP-серверам.</li>
+        <li><strong>Вкладки и двухпанельный режим:</strong> Удобная навигация между папками и быстрая работа с файлами.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Недостатки</h2>
+      <ul>
+        <li><strong>Только для Windows:</strong> Нет версий для Linux или macOS.</li>
+        <li><strong>Редкие обновления:</strong> Некоторые функции устарели, а поддержка современных стандартов ограничена.</li>
+        <li><strong>Интерфейс не всегда интуитивен:</strong> Некоторые настройки могут показаться сложными для новых пользователей.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Презентация про FreeCommander</h2>
+      <p>
+        <strong>FreeCommander</strong> — удобный двухпанельный файловый менеджер, предлагающий функциональность, достаточную для большинства пользователей Windows.
+        В презентации рассмотрены основные функции, примеры использования и сравнение с аналогами.
+      </p>
+      <p>
+        Также представлены преимущества и недостатки программы, её роль в повседневной работе и возможности для настройки.
+      </p>
+      <iframe src="presentation.pdf#page=15"></iframe>
+    </div>
+
+  </div>
+</body>
+</html>
